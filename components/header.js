@@ -18,7 +18,7 @@ padding: 1.45rem 1.0875rem;
 position: relative;
 z-index: 2;
 display: flex;
-justify-content: space- between;
+justify-content: space-between;
 `;
 
 const Nav = styled.nav`
@@ -50,17 +50,25 @@ const Header = () => (
     <HeaderWrapper>
         <HeaderContainer>
             <h2 style={{ margin: 0 }}>
-                <Link to="/" style={{ color: 'white', textDecoration: 'none', }}>
-                    Roush.io
-      </Link>
+                <Link href="/">
+                    <a style={{ color: 'white', textDecoration: 'none', }}>Brew Story</a>
+                </Link>
             </h2>
             <Nav>
                 <ul>
                     <li>
-                        <Link to="/recipes">recipes</Link>
+                        <Link href="/recipes">
+                            <a>
+                                recipes
+                            </a>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/articles">articles</Link>
+                        <Link href="/articles">
+                            <a>
+                                articles
+                            </a>
+                        </Link>
                     </li>
                 </ul>
             </Nav>
