@@ -1,2 +1,2 @@
-# roush-brews
-Homebrew Blog
+# Brew Story
+Sharing the brewing Story.
