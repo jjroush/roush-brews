@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 const HeaderWrapper = styled.div`
-background: DarkOrange;
-margin-bottom: ${({ isHome }) => (isHome ? '0' : '1.45rem')};
+background: brown;
+margin-bottom: 1.45rem;
 overflow: hidden;
 position: relative;
-height: ${({ isHome }) => (isHome ? '100vh' : '20vh')};
+height: 20vh;
 min-height: 180px;
 text-align: right;
 `;
