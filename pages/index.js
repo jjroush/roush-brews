@@ -1,6 +1,6 @@
 function HomePage() {
     return (
-        <div>Welcome to Next.js home!</div>
+        <div>Get ready for spring 2020! 🍻</div>
     )
 }
 

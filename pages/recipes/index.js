@@ -1,5 +1,5 @@
 function RecipePage() {
-    return <div>Welcome to Next.js recipes!</div>
+    return <div>Get ready for spring 2020! 🍻</div>
 }
 
 export default RecipePage

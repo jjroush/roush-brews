@@ -1,5 +1,5 @@
 function ArticlesPage() {
-    return <div>Welcome to Next.js articles!</div>
+    return <div>Get ready for spring 2020! 🍻</div>
 }
 
 export default ArticlesPage
