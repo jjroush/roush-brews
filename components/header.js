@@ -59,14 +59,14 @@ const Header = () => (
                     <li>
                         <Link href="/recipes">
                             <a>
-                                recipes
+                                Recipes
                             </a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/articles">
                             <a>
-                                articles
+                                Articles
                             </a>
                         </Link>
                     </li>
