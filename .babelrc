@@ -8,6 +8,9 @@
             {
                 "ssr": true
             }
+        ],
+        [
+            "import-glob-array"
         ]
     ]
 }
