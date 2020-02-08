@@ -28,4 +28,4 @@ const nextConfig = {
   }
 };
 
-module.exports = withOffline(withMdxEnhanced(nextConfig)());
+module.exports = withMdxEnhanced(withOffline(nextConfig))();
