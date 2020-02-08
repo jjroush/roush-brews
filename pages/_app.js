@@ -1,5 +1,5 @@
 import Header from '../components/header';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -14,13 +14,22 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const Gutters = styled.div`
+  margin: 0 auto;
+  padding-left: 17px;
+  padding-right: 17px;
+  max-width: 1400px;
+`;
+
 
 function MyApp({ Component, pageProps }) {
     return (
         <>
             <Header />
             <GlobalStyle />
-            <Component {...pageProps} />
+            <Gutters>
+                <Component {...pageProps} />
+            </Gutters>
         </>
     )
 }

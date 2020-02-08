@@ -6,14 +6,13 @@ background: brown;
 margin-bottom: 1.45rem;
 overflow: hidden;
 position: relative;
-height: 20vh;
-min-height: 180px;
+height: 100px;
 text-align: right;
 `;
 
 const HeaderContainer = styled.div`
 margin: 0 auto;
-max-width: 960px;
+max-width: 1400px;
 padding: 1.45rem 1.0875rem;
 position: relative;
 z-index: 2;
@@ -31,7 +30,7 @@ ul {
     li {
         margin-left: 30px;
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans - serif;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         text-align: right;
         list-style-position: inside;
       * {

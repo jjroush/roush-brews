@@ -1,3 +1,8 @@
 const withMdxEnhanced = require('next-mdx-enhanced')
+const withOffline = require('next-offline')
 
-module.exports = withMdxEnhanced()()
+const nextConfig = {
+    layoutPath: 'mdx-layouts',
+}
+
+module.exports = withOffline(withMdxEnhanced(nextConfig)())
