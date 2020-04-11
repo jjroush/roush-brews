@@ -2,6 +2,9 @@ const withMdxEnhanced = require("next-mdx-enhanced");
 const withOffline = require("next-offline");
 
 const nextConfig = {
+  experimental: {
+    modern: true
+  },
   layoutPath: "mdx-layouts",
   target: "serverless",
   transformManifest: manifest => ["/"].concat(manifest),
