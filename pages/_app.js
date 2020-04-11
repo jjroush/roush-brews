@@ -1,5 +1,6 @@
-import Header from '../components/header';
-import styled, { createGlobalStyle } from 'styled-components';
+import Head from "next/head";
+import Header from "../components/header";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -21,17 +22,20 @@ const Gutters = styled.div`
   max-width: 1400px;
 `;
 
-
 function MyApp({ Component, pageProps }) {
-    return (
-        <>
-            <Header />
-            <GlobalStyle />
-            <Gutters>
-                <Component {...pageProps} />
-            </Gutters>
-        </>
-    )
+  return (
+    <>
+      <Head>
+        <link rel="shortcut icon" href="/static/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+      </Head>
+      <Header />
+      <GlobalStyle />
+      <Gutters>
+        <Component {...pageProps} />
+      </Gutters>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
