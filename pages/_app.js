@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/header";
 import styled, { createGlobalStyle } from "styled-components";
+import { ThemeProvider, CSSReset } from "@chakra-ui/core";
 
 const GlobalStyle = createGlobalStyle`
     html, body {
@@ -24,17 +25,18 @@ const Gutters = styled.div`
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider>
+      <CSSReset />
+      <GlobalStyle />
       <Head>
         <link rel="shortcut icon" href="/static/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <Header />
-      <GlobalStyle />
       <Gutters>
         <Component {...pageProps} />
       </Gutters>
-    </>
+    </ThemeProvider>
   );
 }
 

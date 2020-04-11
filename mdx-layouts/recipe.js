@@ -1,44 +1,36 @@
-import Qa from '../components/qa.js'
-import styled from 'styled-components'
-
-
+import Qa from "../components/qa.js";
+import styled from "styled-components";
+import { urlObjectKeys } from "next/dist/next-server/lib/utils";
 
 const StyledImgContainer = styled.div`
-position: relative;
-    width: 100%;
-`;
-
-const StyledImage = styled.img.attrs({
-    src: '/1080-placeholder.jpg'
-})`
-    /* position: absolute;
-    left: 0;
-    top: 0; */
-    max-width: 100%;
+  position: relative;
+  width: 100%;
 `;
 
 const StyledText = styled.h2`
-    z-index: 100;
-    position: absolute;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    left: 150px;
-    top: 350px;
+  z-index: 100;
+  position: absolute;
+  color: green;
+  font-size: 150px;
+  font-weight: bold;
+  left: 150px;
+  top: 200px;
 `;
 
-export default frontMatter => {
-    return ({ children: content }) => {
-        return (
-            <>
-                <StyledImgContainer>
-                    <StyledImage />
-                    <StyledText>{'test'}</StyledText>
-                </StyledImgContainer>
-                <h1>{frontMatter.title}</h1>
-                {content}
-                <Qa />
-            </>
-        )
-    }
-}
+export default (frontMatter) => {
+  return ({ children: content }) => {
+    return (
+      <>
+        <StyledImgContainer>
+          <img
+            src={`/recipe-header-img/${frontMatter.uuid}.jpg`}
+            style={{ maxWidth: `100%` }}
+          />
+          <StyledText>{frontMatter.title}</StyledText>
+        </StyledImgContainer>
+        {content}
+        <Qa />
+      </>
+    );
+  };
+};
