@@ -9,7 +9,7 @@ const StyledImgContainer = styled.div`
 
 const StyledText = styled.h2`
   z-index: 100;
-  position: absolute;
+  /* position: absolute; */
   color: green;
   font-size: 150px;
   font-weight: bold;
