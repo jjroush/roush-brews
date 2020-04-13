@@ -8,12 +8,12 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
-    body {
+    /* body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
-  }
+  } */
 `;
 
 const Gutters = styled.div`

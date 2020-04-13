@@ -1,6 +1,6 @@
 import Qa from "../components/qa.js";
 import styled from "styled-components";
-import { urlObjectKeys } from "next/dist/next-server/lib/utils";
+import Ingredients from "../components/ingredients.js";
 
 const StyledImgContainer = styled.div`
   position: relative;
@@ -28,6 +28,11 @@ export default (frontMatter) => {
           />
           <StyledText>{frontMatter.title}</StyledText>
         </StyledImgContainer>
+        <Ingredients
+          grain={frontMatter.grain_bill}
+          hops={frontMatter.hops}
+          yeast={frontMatter.yeast}
+        />
         {content}
         <Qa />
       </>
