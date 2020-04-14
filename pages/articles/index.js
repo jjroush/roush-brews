@@ -6,13 +6,13 @@ function ArticlesPage() {
 
   return (
     <ul>
-      {articles.map((article) => (
+      {/* {articles.map((article) => (
         <li key={article.__resourcePath}>
           <Link href={formatPath(article.__resourcePath)}>
             <a>{article.title}</a>
           </Link>
         </li>
-      ))}
+      ))} */}
     </ul>
   );
 }
