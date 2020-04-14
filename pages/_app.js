@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
       <CSSReset />
       <GlobalStyle />
       <Head>
-        <link rel="shortcut icon" href="/static/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <Header />
