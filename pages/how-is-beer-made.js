@@ -9,8 +9,9 @@ const BeerStoryPage = () => (
         <Heading as={"h2"}>{'Mashing'}</Heading>
         <Heading as={"h2"}>{'Boil'}</Heading>
         <Heading as={"h2"}>{'Fermentation'}</Heading>
-        <Heading as={"h2"}>{'Carbination'}</Heading>
+        <Heading as={"h2"}>{'Carbonation'}</Heading>
         <Text>{"Before xxxx this step would be skipped but alas.."}</Text>
+        <Heading as={"h2"}>{'Drink'}</Heading>
     </>
 )
 
